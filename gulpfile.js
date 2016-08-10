@@ -9,7 +9,7 @@ const gulp = require('gulp'),
 var sassFold = 'source/sass/*.scss',
     htmlFold = 'source/html/*.html';
 
-var indexSrc = 'source/html/index.html',
+var indexSrc = 'source/index.html',
     sassSrc = 'source/sass/style.scss',
     jsSrc = 'source/js/*.*',
     fontsSrc = 'source/fonts/**',

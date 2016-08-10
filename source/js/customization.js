@@ -1,3 +1,5 @@
-/**
- * Created by Dima on 27.02.2016.
- */
+$(document).ready(function() {
+
+    // code
+
+});
