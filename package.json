@@ -1,0 +1,26 @@
+{
+  "name": "jquery",
+  "version": "1.0.0",
+  "description": "learn jquery",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://dmink@bitbucket.org/dmink/lquery.git"
+  },
+  "keywords": [
+    "jquery"
+  ],
+  "author": "dmink",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/dmink/lquery#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-csscomb": "^3.0.7",
+    "gulp-rigger": "^0.5.8",
+    "gulp-ruby-sass": "^2.0.6"
+  }
+}

@@ -1,0 +1,25 @@
+// Reset
+
+@mixin indent-zero {
+	padding: 0;
+	margin: 0;
+}
+
+// Containers
+
+@mixin wrapper-container {
+	width: 100%;
+	max-width: $wrapper-container;
+	margin: 0 auto;
+}
+
+// Utilities
+
+@mixin clearfix {
+
+	&::after {
+		display: block;
+		content: '';
+		clear: both;
+	}
+}
