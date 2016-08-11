@@ -1,5 +1,5 @@
 $(document).ready( function() {
 
-    $('.par2 ~ p').css('border', '3px solid red');
+    $( 'li:not(li:eq(2))' ).css('border', '3px solid red');
 
 });
