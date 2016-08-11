@@ -401,5 +401,16 @@ p {
 .container {
   padding: 50px; }
 
+.block-form {
+  margin-bottom: 50px; }
+
 .block1 {
   margin-bottom: 50px; }
+
+span {
+  display: inline-block;
+  vertical-align: middle; }
+
+input {
+  display: inline-block;
+  vertical-align: middle; }
