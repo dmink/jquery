@@ -1,5 +1,5 @@
-$(document).ready(function() {
+$(document).ready( function() {
 
-    // code
+    $('.par2 ~ p').css('border', '3px solid red');
 
 });
