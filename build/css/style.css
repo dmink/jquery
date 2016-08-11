@@ -401,5 +401,13 @@ p {
 .container {
   padding: 50px; }
 
+.flower {
+  margin-bottom: 50px; }
+  .flower a {
+    display: inline-block; }
+  .flower img {
+    display: block;
+    max-width: 100%; }
+
 .block1 {
   margin-bottom: 50px; }
