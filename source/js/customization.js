@@ -1,14 +1,15 @@
 $(document).ready( function() {
 
-    //$( '.list > li > a' ).append( 'content .append link' );
-    //$( '.list > li' ).append( 'content .append "li"' );
-    //$( '.list > li:first').prepend( 'content .prepend' );
-    //$( '.block2 p:last' ).appendTo( 'p:first' );
-    //$( '.block2 p:last' ).prependTo( 'p:first' );
-    //$( '.block2 p:first' ).insertAfter( 'p:last' );
+    $('p:first').wrap('<div class="class"></div>').css({
+        'background-color' : 'yellow'
+    });
 
-    $( '.block2 p:last' ).after( '<p>Item 5 - new content</p>' );
-    $( '.block2 p:last').attr( 'class', 'dmk' );
+    $('p').wrapAll( '<div style="border: 3px solid red"></div>' );
 
+    $('ul li').empty();
+
+    $('.container').wrapInner( '<div style="background-color: #f2f2f2"></div>' );
+
+    $('.block2').clone();
 
 });
