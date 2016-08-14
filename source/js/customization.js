@@ -1,24 +1,18 @@
 $(document).ready( function() {
 
-    $('.s-height').html( $('.block-size').height() );
-    $('.s-width').html( $('.block-size').width() );
-    $('.s-innerheight').html( $('.block-size').innerHeight() );
-    $('.s-innerwidth').html( $('.block-size').innerWidth() );
-    $('.s-outerheight').html( $('.block-size').outerHeight() );
-    $('.s-outerwidth').html( $('.block-size').outerWidth() );
-    $('.s-offset').html( $('.block-size').offset().top + ' , ' + $('.block-size').offset().left );
-    $('.s-position').html( $('.block-size').position().top + ' , ' + $('.block-size').position().left );
-
-    $('li').addClass('items').removeClass('item1');
-
-    $('.block2 p').click( function() {
-        $(this).toggleClass('.active', 'switch');
+    $('.data-store').click( function() {
+        $('.data-sample').data( 'key1', 13 );
+        $('.data-sample').data( 'key2', 'Dmitry Kostrubiak' );
     });
 
-    $('.scroll-btn').click( function() {
-        var valTop = $('.scroll-wrap').scrollTop();
-        $('.scroll-value').text( 'ScrollTop: ' + valTop );
-        console.log( 'ScrollTop: ' + valTop );
+    $('.data-remove').click( function() {
+        $('.data-sample').removeData();
+    });
+
+    $('.data-show').click( function() {
+        //alert( $('.data-sample').data('key1') );
+        //alert( $('.data-sample').data('key2') );
+        alert( JSON.stringify( $('.data-sample').data(),null,'  ' ) );
     });
 
 });

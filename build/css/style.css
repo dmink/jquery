@@ -404,6 +404,16 @@ p {
 .container {
   padding: 50px; }
 
+.block-data {
+  margin-bottom: 50px; }
+
+.data-sample {
+  width: 70%;
+  height: 200px;
+  padding: 20px;
+  margin-bottom: 15px;
+  background-color: lightblue; }
+
 .block-size {
   width: 50%;
   height: 200px;
