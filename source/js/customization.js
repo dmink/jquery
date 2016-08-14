@@ -1,18 +1,18 @@
-$(document).ready( function() {
-
-    $('.data-store').click( function() {
-        $('.data-sample').data( 'key1', 13 );
-        $('.data-sample').data( 'key2', 'Dmitry Kostrubiak' );
-    });
-
-    $('.data-remove').click( function() {
-        $('.data-sample').removeData();
-    });
-
-    $('.data-show').click( function() {
-        //alert( $('.data-sample').data('key1') );
-        //alert( $('.data-sample').data('key2') );
-        alert( JSON.stringify( $('.data-sample').data(),null,'  ' ) );
-    });
-
+$('document').ready(function() {
+    buildList('.block__title', '#headings');
 });
+
+function buildList (hTitle, hContainer) {
+
+    var hCount = 0,
+        hList = $('<ul class="hList">');
+
+    $(hTitle).each(function() {
+
+        $(this).html("<a name='hPage" + hCount + "'></a>" + $(this).html());
+        hList.append($("<li><a href='#hPage" + hCount++ + "'> " + $(this).text() + "</a></li>"));
+
+    });
+
+    $(hContainer).append(hList);
+}
