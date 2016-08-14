@@ -373,6 +373,9 @@ textarea {
 * {
   box-sizing: border-box; }
 
+html, body {
+  height: 100%; }
+
 body {
   background: white;
   font-family: "OpenSans", "Arial", sans-serif;
@@ -401,13 +404,21 @@ p {
 .container {
   padding: 50px; }
 
-.flower {
+.block-size {
+  width: 50%;
+  height: 200px;
+  margin-bottom: 15px;
+  border: 25px solid lightcoral;
+  background-color: lightgreen; }
+
+.scroll-div {
   margin-bottom: 50px; }
-  .flower a {
-    display: inline-block; }
-  .flower img {
-    display: block;
-    max-width: 100%; }
+
+.size-value {
+  margin-bottom: 50px; }
 
 .block1 {
+  margin-bottom: 50px; }
+
+.block2 {
   margin-bottom: 50px; }
