@@ -1,18 +1,14 @@
 $('document').ready(function() {
-    buildList('.block__title', '#headings');
-});
 
-function buildList (hTitle, hContainer) {
+    $('.block1').on( 'mouseover mouseleave', mouseMove);
 
-    var hCount = 0,
-        hList = $('<ul class="hList">');
-
-    $(hTitle).each(function() {
-
-        $(this).html("<a name='hPage" + hCount + "'></a>" + $(this).html());
-        hList.append($("<li><a href='#hPage" + hCount++ + "'> " + $(this).text() + "</a></li>"));
-
+    $('.block1').on( 'click', function(evt) {
+        $(this).off( 'mouseover mouseleave', mouseMove );
+        $(this).html( '<p>You shut off the hover effect</p>' )
     });
 
-    $(hContainer).append(hList);
-}
+});
+
+function mouseMove(evt) {
+    $('.block1').toggleClass('hover');
+};

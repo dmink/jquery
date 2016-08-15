@@ -401,21 +401,16 @@ p {
 
 /* Styles
 --------------------------------------------------------------------- */
-.main-content {
-  padding: 20px 50px 20px 100px; }
+.container {
+  padding: 50px; }
 
-.headings {
+.block1 {
+  width: 50%;
+  height: 200px;
   margin-bottom: 50px; }
-  .headings h1 {
-    margin-bottom: 25px; }
 
-.block {
-  margin-bottom: 80px; }
-  .block__title {
-    margin-bottom: 30px;
-    font-size: 24px; }
-  .block a {
-    border-bottom: 1px solid tomato;
-    font-size: 18px;
-    font-weight: bold;
-    color: tomato; }
+.normal {
+  background-color: yellow; }
+
+.hover {
+  background-color: lightgreen; }

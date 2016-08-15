@@ -52,30 +52,22 @@ p {
 /* Styles
 --------------------------------------------------------------------- */
 
-.main-content {
-	padding: 20px 50px 20px 100px;
+.main-content {}
+
+.container {
+	padding: 50px;
 }
 
-.headings {
+.block1 {
+	width: 50%;
+	height: 200px;
 	margin-bottom: 50px;
-
-	h1 {
-		margin-bottom: 25px;
-	}
 }
 
-.block {
-	margin-bottom: 80px;
+.normal {
+	background-color: yellow;
+}
 
-	&__title {
-		margin-bottom: 30px;
-		font-size: 24px;
-	}
-	
-	a {
-		border-bottom: 1px solid tomato;
-		font-size: 18px;
-		font-weight: bold;
-		color: tomato;
-	}
+.hover {
+	background-color: lightgreen;
 }
