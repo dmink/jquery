@@ -1,20 +1,22 @@
-$('document').ready(function() {
+$(function() {
 
-    $('.block1').hover( mouseMove, mouseMove );
+    $('.block-data').click( function(evt) {
 
-    $('.block1').click( fnClick1 );
-    $('.block1').dblclick( fnClick2 );
+        $(this).html('PageX: ' + evt.pageX + ', PageY: ' + evt.pageY + ',<br>' +
+            'Type: ' + evt.type + ',<br>' + 'Target: ' + evt.target);
 
+        if (evt.pageX <= 300) {
+            $(this).css({
+                'background-color': 'tomato'
+            });
+        } else if (evt.pageX > 300 && evt.pageX <= 600) {
+            $(this).css({
+                'background-color': 'lightgreen'
+            });
+        } else {
+            $(this).css({
+                'background-color': 'orange'
+            });
+        };
+    });
 });
-
-function mouseMove(evt) {
-    $('.block1').toggleClass('hover');
-};
-
-function fnClick1() {
-    $('.block1').html( 'Click' );
-}
-
-function fnClick2() {
-    $('.block1').html( 'Double Click' );
-}

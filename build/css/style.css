@@ -379,7 +379,7 @@ html, body {
 body {
   background: white;
   font-family: "OpenSans", "Arial", sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 160%;
   color: black; }
 
@@ -404,13 +404,9 @@ p {
 .container {
   padding: 50px; }
 
-.block1 {
-  width: 50%;
-  height: 200px;
-  margin-bottom: 50px; }
-
-.normal {
-  background-color: yellow; }
-
-.hover {
-  background-color: lightgreen; }
+.block-data {
+  width: 70%;
+  height: 150px;
+  padding: 20px;
+  margin-bottom: 10px;
+  background-color: lightblue; }
