@@ -1,11 +1,16 @@
 $(function() {
 
-    $('.block-data').one( 'click', function(evt) {
-
-        $(this).css({
-            'background-color' : 'lightgreen',
-            'border' : '5px solid darkgreen',
-            'cursor' : 'auto'
-        });
+    $('.btn1').click( function() {
+        countUpdate( $('.count1') );
     });
+
+    $('.btn2').click( function(evt) {
+        $('.btn1').trigger('click');
+        countUpdate( $('.count2') );
+    })
 });
+
+function countUpdate(val) {
+    var tmp = parseInt( val.text(), 10 );
+    val.text( tmp + 1 );
+}

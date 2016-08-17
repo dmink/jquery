@@ -58,14 +58,11 @@ p {
 	padding: 50px;
 }
 
-.block-data {
-	display: inline-block;
-	width: 150px;
-	height: 100px;
-	padding: 20px;
-	margin: 10px;
-	border: 5px solid darkblue;
-	background-color: lightblue;
-	vertical-align: top;
-	cursor: pointer;
+.btn {
+	margin: 20px;
+}
+
+.count {
+	font-weight: bold;
+	color: red;
 }
